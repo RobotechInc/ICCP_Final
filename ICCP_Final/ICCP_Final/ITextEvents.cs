@@ -47,11 +47,11 @@ namespace ICCP_Final
             }
             catch (DocumentException de)
             {
-
+                throw new Exception(de.Message);
             }
             catch (System.IO.IOException ioe)
             {
-
+                throw new Exception(ioe.Message);
             }
         }
 
@@ -206,5 +206,4 @@ namespace ICCP_Final
             footerTemplate.EndText();
         }
     }
-}
 }
